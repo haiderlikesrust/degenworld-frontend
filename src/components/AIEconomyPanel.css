@@ -1,0 +1,149 @@
+.ai-economy-panel {
+  background: transparent;
+  padding: 12px;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.ai-economy-panel:last-child {
+  border-bottom: none;
+}
+
+.economy-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.economy-header h3 {
+  color: #667eea;
+  margin: 0;
+}
+
+.get-status-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.get-status-btn:hover:not(:disabled) {
+  background: #45a049;
+}
+
+.get-status-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.no-economy {
+  text-align: center;
+  padding: 30px;
+  color: #666;
+}
+
+.economy-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.economy-trend {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 4px solid #888;
+}
+
+.trend-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.trend-icon {
+  font-size: 1.5rem;
+}
+
+.trend-label {
+  color: #333;
+  font-size: 1rem;
+}
+
+.trend-label strong {
+  text-transform: capitalize;
+}
+
+.economy-description {
+  color: #555;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.price-changes,
+.market-events,
+.recommendations {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.price-changes h4,
+.market-events h4,
+.recommendations h4 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+.price-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background: white;
+  border-radius: 6px;
+}
+
+.price-item .positive {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.price-item .negative {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.market-events ul,
+.recommendations ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.market-events li,
+.recommendations li {
+  padding: 8px;
+  background: white;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #555;
+}
+

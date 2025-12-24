@@ -1,0 +1,125 @@
+.npcs-panel {
+  background: transparent;
+  padding: 12px;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 0;
+  max-height: none;
+  overflow-y: visible;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.npcs-panel:last-child {
+  border-bottom: none;
+}
+
+.npcs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.npc-count {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: normal;
+}
+
+.npcs-header h3 {
+  color: #667eea;
+  margin: 0;
+}
+
+.generate-btn {
+  background: #32cd32;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.generate-btn:hover:not(:disabled) {
+  background: #28a428;
+}
+
+.generate-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.no-npcs {
+  text-align: center;
+  padding: 30px;
+  color: #666;
+}
+
+.npcs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.npc-card {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  transition: all 0.2s;
+}
+
+.npc-card:hover {
+  border-color: #667eea;
+  transform: translateY(-2px);
+}
+
+.npc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.npc-header h4 {
+  color: #333;
+  margin: 0;
+}
+
+.npc-occupation {
+  background: #667eea;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.npc-details {
+  font-size: 0.9rem;
+}
+
+.npc-personality {
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.npc-backstory {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+}
+
+.npc-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+

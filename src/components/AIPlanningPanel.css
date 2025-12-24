@@ -1,0 +1,104 @@
+.ai-planning-panel {
+  background: transparent;
+  padding: 12px;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.ai-planning-panel:last-child {
+  border-bottom: none;
+}
+
+.planning-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.planning-header h3 {
+  color: #667eea;
+  margin: 0;
+}
+
+.get-suggestions-btn {
+  background: #2196f3;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.get-suggestions-btn:hover:not(:disabled) {
+  background: #1976d2;
+}
+
+.get-suggestions-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.no-suggestions {
+  text-align: center;
+  padding: 30px;
+  color: #666;
+}
+
+.suggestions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.suggestion-card {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+}
+
+.suggestion-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.suggestion-icon {
+  font-size: 1.5rem;
+}
+
+.suggestion-header h4 {
+  flex: 1;
+  margin: 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+.suggestion-priority {
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.suggestion-reason {
+  color: #555;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.suggestion-cost {
+  color: #667eea;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
