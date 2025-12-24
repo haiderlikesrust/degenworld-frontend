@@ -45,14 +45,6 @@ function GameHeader({ gameState, player, walletAddress, onWalletConnect }) {
     }
   }, [player, gameState]);
 
-  useEffect(() => {
-    // Pulse animation for evolution timer
-    const interval = setInterval(() => {
-      setPulse(p => !p);
-    }, 2000);
-    return () => clearInterval(interval);
-  }, []);
-
   const loadEvolutionStatus = async () => {
     try {
       const status = await getEvolutionStatus();

@@ -14,7 +14,8 @@ function Game() {
   const [walletAddress, setWalletAddress] = useState(null);
   const [player, setPlayer] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [, setShowInitModal] = useState(false);
+  // eslint-disable-next-line no-unused-vars
+  const [showInitModal, setShowInitModal] = useState(false);
   const [initForm, setInitForm] = useState({ tokenContractAddress: '' });
 
   useEffect(() => {
