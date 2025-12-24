@@ -66,13 +66,17 @@ React frontend for DegenWorld - A self-evolving on-chain city simulation game.
    - Settings → Environment Variables
    - Add `REACT_APP_API_URL` with your backend URL
 
+**Note:** The `vercel.json` file is already configured to use `--legacy-peer-deps` automatically.
+
 ### Netlify
 
 1. Connect GitHub repository
-2. Set build directory to `client`
-3. Set build command: `npm install --legacy-peer-deps && npm run build`
-4. Set publish directory: `client/build`
-5. Add environment variable: `REACT_APP_API_URL`
+2. The `netlify.toml` file is already configured with the correct build settings
+3. Add environment variable in Netlify dashboard:
+   - Go to Site settings → Environment variables
+   - Add `REACT_APP_API_URL` with your backend URL
+
+**Note:** The `netlify.toml` and `.npmrc` files ensure `--legacy-peer-deps` is used automatically.
 
 ### Cloudflare Pages
 

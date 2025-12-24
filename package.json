@@ -1,7 +1,8 @@
 {
-  "name": "crypto-country-client",
+  "name": "degenworld-frontend",
   "version": "1.0.0",
   "private": true,
+  "description": "DegenWorld Frontend - React Application",
   "dependencies": {
     "@react-three/drei": "^9.92.7",
     "@react-three/fiber": "^8.15.11",
@@ -18,7 +19,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall": "echo 'Dependencies installed with legacy-peer-deps'"
   },
   "eslintConfig": {
     "extends": [
@@ -36,5 +38,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "."
 }
