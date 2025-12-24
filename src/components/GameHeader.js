@@ -8,7 +8,6 @@ function GameHeader({ gameState, player, walletAddress, onWalletConnect }) {
   const [evolutionStatus, setEvolutionStatus] = useState(null);
   const [activeEvents, setActiveEvents] = useState([]);
   const [coinsPerMin, setCoinsPerMin] = useState(0);
-  const [pulse, setPulse] = useState(false);
 
   useEffect(() => {
     loadEvolutionStatus();

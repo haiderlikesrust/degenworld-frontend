@@ -14,7 +14,7 @@ function Game() {
   const [walletAddress, setWalletAddress] = useState(null);
   const [player, setPlayer] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [showInitModal, setShowInitModal] = useState(false);
+  const [, setShowInitModal] = useState(false);
   const [initForm, setInitForm] = useState({ tokenContractAddress: '' });
 
   useEffect(() => {

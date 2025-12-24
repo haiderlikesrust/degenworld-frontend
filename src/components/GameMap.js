@@ -1,5 +1,5 @@
 import React, { useRef, useMemo, useState } from 'react';
-import { Canvas, useFrame, useThree } from '@react-three/fiber';
+import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Text, Sky } from '@react-three/drei';
 import * as THREE from 'three';
 import './GameMap.css';

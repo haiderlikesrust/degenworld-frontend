@@ -4,26 +4,6 @@ import './GameStats.css';
 function GameStats({ gameState, player }) {
   if (!gameState) return null;
 
-  const formatTime = (timestamp) => {
-    if (!timestamp) return 'N/A';
-    const date = new Date(timestamp);
-    return date.toLocaleString();
-  };
-
-  const formatDuration = (ms) => {
-    const seconds = Math.floor(ms / 1000);
-    const minutes = Math.floor(seconds / 60);
-    const hours = Math.floor(minutes / 60);
-    const days = Math.floor(hours / 24);
-    
-    if (days > 0) return `${days}d ${hours % 24}h`;
-    if (hours > 0) return `${hours}h ${minutes % 60}m`;
-    if (minutes > 0) return `${minutes}m ${seconds % 60}s`;
-    return `${seconds}s`;
-  };
-
-  const gameDuration = Date.now() - (gameState.gameStartTime || Date.now());
-
   return (
     <div className="game-stats-compact">
       {/* Player Stats - Most Important */}

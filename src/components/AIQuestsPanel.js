@@ -7,20 +7,20 @@ function AIQuestsPanel({ walletAddress, player, onUpdate }) {
   const [generating, setGenerating] = useState(false);
   const [completing, setCompleting] = useState(null);
 
-  useEffect(() => {
-    if (walletAddress) {
-      loadQuests();
-    }
-  }, [walletAddress]);
-
-  const loadQuests = async () => {
+  const loadQuests = React.useCallback(async () => {
     try {
       const questsData = await getQuests(walletAddress);
       setQuests(questsData.filter(q => q.status === 'active'));
     } catch (error) {
       console.error('Error loading quests:', error);
     }
-  };
+  }, [walletAddress]);
+
+  useEffect(() => {
+    if (walletAddress) {
+      loadQuests();
+    }
+  }, [walletAddress, loadQuests]);
 
   const handleGenerate = async () => {
     if (!walletAddress) {
